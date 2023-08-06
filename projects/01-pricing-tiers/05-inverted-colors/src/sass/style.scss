@@ -54,6 +54,11 @@ body {
   margin-inline: auto;
 }
 
+.inverted {
+  background: $color-primary-400;
+  color: $color-neutral-100;
+}
+
 .page-title {
   color: $color-primary-400;
   font-size: $fs-900;
@@ -75,6 +80,9 @@ body {
     text-transform: uppercase;
     font-weight: $fw-700;
     color: $color-primary-400;
+    .inverted & {
+      color: $color-neutral-100;
+    }
   }
 
   &__feature-list {
@@ -113,4 +121,8 @@ body {
   padding: 1em 1.5em;
 
   justify-self: center;
+  .inverted & {
+    color: $color-primary-400;
+    background: $color-neutral-100;
+  }
 }
